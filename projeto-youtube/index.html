@@ -14,17 +14,28 @@
 		/>
 		<link rel="stylesheet" href="styles/styles.css" />
 		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/sidebar.css" />
+		<link rel="stylesheet" href="styles/scrollbar.css" />
 		<title>Youtube</title>
+		<link
+			rel="shortcut icon"
+			href="imagens/icons/icons8-youtube-32 (1).png"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
+		<!--IconsDB eh mt bom para icones!!-->
+		<!-- Como o Icons8.. -->
 		<div class="header">
 			<div class="esquerda">
-				<img
-					class="menu"
-					height="60%"
-					src="imagens/icons/icons8-menu-arredondado-30.png"
-					alt=""
-				/>
+				<div class="menu">
+					<img
+						class="menu-icone"
+						src="imagens/icons/icons8-menu-arredondado-30.png"
+						alt=""
+					/>
+					<div class="descricao-icone">Expandir Menu Lateral</div>
+				</div>
 				<img
 					class="yt-logo"
 					src="imagens/icons/512px-YouTube_dark_logo_2017.svg.png"
@@ -39,302 +50,565 @@
 						src="imagens/icons/icons8-search-50.png"
 						alt=""
 					/>
+					<div class="descricao-icone">Pesquisar</div>
 				</button>
 			</div>
 			<div class="direita">
-				<img
-					class="add-video"
-					height="100%"
-					src="imagens/icons/15-155680_camera-icon-white-small-white-camera-icon-transparent.png"
-					alt=""
-				/>
-				<img
-					class="notificacao"
-					height="100%"
-					src="imagens/icons/Lovepik_com-400278279-bell-linear-icon.png"
-					alt=""
-				/>
+				<div class="add-video-container">
+					<img
+						class="add-video"
+						height="100%"
+						src="imagens/icons/15-155680_camera-icon-white-small-white-camera-icon-transparent.png"
+						alt="Adicionar vídeo"
+					/>
+					<div class="descricao-icone">Adicionar vídeo</div>
+				</div>
+				<div class="notificao-container">
+					<img
+						class="notificacao-icone"
+						height="100%"
+						src="imagens/icons/Lovepik_com-400278279-bell-linear-icon.png"
+						alt=""
+					/>
+					<div class="notificao-numero">5</div>
+					<div class="descricao-icone">Notificações</div>
+				</div>
 
-				<img
-					class="perfil-foto-usuario"
-					src="imagens/fotos-perfil/yt-pfp.jpg"
-					alt="foto perfil usuario"
-				/>
+				<div class="perfil-foto-usuario-container">
+					<img
+						class="perfil-foto-usuario"
+						src="imagens/fotos-perfil/yt-pfp.jpg"
+						alt="foto perfil usuario"
+					/>
+					<div class="descricao-icone">Perfil do Usuário</div>
+				</div>
 			</div>
 		</div>
+		<div class="sidebar">
+			<div class="pagina"
+				><img
+					src="imagens/icons/inicio-icone.png"
+					alt=""
+					class="pagina-icone"
+				/>
+				<p class="pagina-descricao"> Início</p></div
+			>
+			<div class="pagina">
+				<img src="imagens/icons/folder-icone.png" alt="" class="pagina-icone" />
+				<p class="pagina-descricao">Shorts</p></div
+			>
+			<div class="pagina">
+				<img
+					src="imagens/icons/report-icone.png"
+					alt=""
+					class="pagina-icone"
+				/><p class="pagina-descricao"> Inscrições</p></div
+			>
+			<div class="pagina"
+				><img
+					src="imagens/icons/book-icone.png"
+					alt=""
+					class="pagina-icone"
+				/><p class="pagina-descricao"> Biblioteca</p></div
+			>
+		</div>
 		<div class="video-grid">
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-1.jpeg"
-					alt="marques brownlee"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			<a target="_blank" href="https://youtu.be/n2RNcPRtAiY">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/marques-brownlee.jpeg"
-							alt=""
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-1.jpeg"
+							alt="marques brownlee"
 						/>
+						<div class="video-tempo">5:34</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo"
-							>Talking Tech and AI with Google CEO Sundar Pichal!</h3
-						>
-						<p class="video-perfil">Marques Brownlee</p>
-						<p class="video-data">3.4M views &bullet; 6 months ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/marques-brownlee.jpeg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"
+								>Talking Tech and AI with Google CEO Sundar Pichal!</h3
+							>
+							<p class="video-perfil">Marques Brownlee</p>
+							<p class="video-data">3.4M views &bullet; 6 months ago</p>
+						</div>
+					</div></div
+				>
+			</a>
+			<a href="https://youtu.be/mP0RAo9SKZk" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-2.webp"
+							alt="markiplier"
+						/>
+						<div class="video-tempo">14:02</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/markiplier-perfil.jpeg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">Try Not to Laugh Challenge #9</h3>
+							<p class="video-perfil">Markiplier</p>
+							<p class="video-data">16M views &bullet; 4 months ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-2.webp"
-					alt="markiplier"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/FgjPQQeTh1w" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/markiplier-perfil.jpeg"
-							alt=""
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-3.webp"
+							alt="markiplier"
 						/>
+						<div class="video-tempo">6:32</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">Try Not to Laugh Challenge #9</h3>
-						<p class="video-perfil">Markiplier</p>
-						<p class="video-data">16M views &bullet; 4 months ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-3.jpeg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								Crazy Tik Toks Taken Moments Before DISASTER</h3
+							>
+							<p class="video-perfil">SSSniperWolf</p>
+							<p class="video-data">12M views &bullet; 1 year ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-3.webp"
-					alt="markiplier"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/094y1Z2wpJg" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-3.jpeg"
-							alt=""
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-4.webp"
+							alt="veritasium"
 						/>
+						<div class="video-tempo">4:45</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							Crazy Tik Toks Taken Moments Before DISASTER</h3
-						>
-						<p class="video-perfil">SSSniperWolf</p>
-						<p class="video-data">12M views &bullet; 1 year ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-4.jpeg"
+								alt="veritasium perfil usuario"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								The Simplest Math Problem No One Can Solve - Collatz
+								Conjecture</h3
+							>
+							<p class="video-perfil">Veritasium</p>
+							<p class="video-data">18M views &bullet; 4 months ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-4.webp"
-					alt="veritasium"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/86CQq3pKSUw" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-4.jpeg"
-							alt="veritasium perfil usuario"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-5.webp"
+							alt="CS DOJO"
 						/>
+						<div class="video-tempo">9:46</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							The Simplest Math Problem No One Can Solve - Collatz
-							Conjecture</h3
-						>
-						<p class="video-perfil">Veritasium</p>
-						<p class="video-data">18M views &bullet; 4 months ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-5.jpeg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								Kadane's Algorithm to Maximum Sum Subarray Problem</h3
+							>
+							<p class="video-perfil">CS Dojo</p>
+							<p class="video-data">519K views &bullet; 5 years ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-5.webp"
-					alt="CS DOJO"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/yXWw0_UfSFg" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-5.jpeg"
-							alt=""
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-6.webp"
+							alt="Mister Beast"
 						/>
+						<div class="video-tempo">3:02</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							Kadane's Algorithm to Maximum Sum Subarray Problem</h3
-						>
-						<p class="video-perfil">CS Dojo</p>
-						<p class="video-data">519K views &bullet; 5 years ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-6.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								Anything You Can Fit In The Circle I’ll Pay For</h3
+							>
+							<p class="video-perfil">Markiplier</p>
+							<p class="video-data">141M views &bullet; 1 year ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-6.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/fNVa1qMbF9Y" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-6.jpeg"
-							alt="MrBeast"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-7.webp"
+							alt="Real Life Lore"
 						/>
+						<div class="video-tempo">0:45</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							Anything You Can Fit In The Circle I’ll Pay For</h3
-						>
-						<p class="video-perfil">Markiplier</p>
-						<p class="video-data">141M views &bullet; 1 year ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-7.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"> Why Planes Don't Fly Over Tibet</h3>
+							<p class="video-perfil">RealLifeLore</p>
+							<p class="video-data">6.6M views &bullet; 1 year ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-7.webp"
-					alt="Real Life Lore"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/lFm4EM1juls" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-7.jpeg"
-							alt="MrBeast"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-8.webp"
+							alt="Mister Beast"
 						/>
+						<div class="video-tempo">7:09</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo"> Why Planes Don't Fly Over Tibet</h3>
-						<p class="video-perfil">RealLifeLore</p>
-						<p class="video-data">6.6M views &bullet; 1 year ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-8.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								Inside The World's Biggest Passenger Plane</h3
+							>
+							<p class="video-perfil">Tech Vision</p>
+							<p class="video-data">3.7M views &bullet; 10 months ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-8.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/ixmxOlcrlUc" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-8.jpeg"
-							alt="MrBeast"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-9.webp"
+							alt="Mister Beast"
 						/>
+						<div class="video-tempo">14:54</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							Inside The World's Biggest Passenger Plane</h3
-						>
-						<p class="video-perfil">Tech Vision</p>
-						<p class="video-data">3.7M views &bullet; 10 months ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-9.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"> The SECRET to Super Human STRENGTH</h3>
+							<p class="video-perfil">ThenX</p>
+							<p class="video-data">20M views &bullet; 3 years ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-9.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/R2vXbFp5C9o" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-9.jpeg"
-							alt="MrBeast"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-10.webp"
+							alt="Mister Beast"
 						/>
+						<div class="video-tempo">22:54</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo"> The SECRET to Super Human STRENGTH</h3>
-						<p class="video-perfil">ThenX</p>
-						<p class="video-data">20M views &bullet; 3 years ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-10.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								How The World's Largest Cruise Ship Makes 30,000 Meals Every
+								Day</h3
+							>
+							<p class="video-perfil">Business Insider</p>
+							<p class="video-data">14M views &bullet; 1 year ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-10.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
+			</a>
+			<a href="https://youtu.be/u5_zuYWsypg" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
 						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-10.jpeg"
-							alt="MrBeast"
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-11.webp"
+							alt="Mister Beast"
 						/>
+						<div class="video-tempo">2:46</div>
 					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							How The World's Largest Cruise Ship Makes 30,000 Meals Every
-							Day</h3
-						>
-						<p class="video-perfil">Business Insider</p>
-						<p class="video-data">14M views &bullet; 1 year ago</p>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-11.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								Dubai's Crazy Underwater Train and Other Things #Only in Dubai</h3
+							>
+							<p class="video-perfil">Destination Tips</p>
+							<p class="video-data">3M views &bullet; 1 year ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-11.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
-						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-11.jpeg"
-							alt="MrBeast"
-						/>
-					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							Dubai's Crazy Underwater Train and Other Things #Only in Dubai</h3
-						>
-						<p class="video-perfil">Destination Tips</p>
-						<p class="video-data">3M views &bullet; 1 year ago</p>
-					</div>
-				</div>
-			</div>
-			<div class="video-preview">
-				<img
-					class="video-thumbnail"
-					src="imagens/thumbnails/thumbnail-12.webp"
-					alt="Mister Beast"
-				/>
-				<div class="video-info">
-					<div class="canal-foto">
-						<img
-							class="foto-autor"
-							src="imagens/fotos-perfil/channel-12.jpeg"
-							alt="MrBeast"
-						/>
-					</div>
-					<div class="video-descricao">
-						<h3 class="video-titulo">
-							What would happen if you didn’t drink water? - Mia Nacamulli</h3
-						>
-						<p class="video-perfil">TED-Ed</p>
-						<p class="video-data">12M views &bullet; 5 years ago</p>
+			</a>
+			<a href="https://youtu.be/9iMGFqMmUFs" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<img
+						class="video-thumbnail"
+						src="imagens/thumbnails/thumbnail-12.webp"
+						alt="Mister Beast"
+					/>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-12.jpeg"
+								alt="MrBeast"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">
+								What would happen if you didn’t drink water? - Mia Nacamulli</h3
+							>
+							<p class="video-perfil">TED-Ed</p>
+							<p class="video-data">12M views &bullet; 5 years ago</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</a>
+			<a href="https://youtu.be/H5GETOP7ivs" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-13.webp"
+							alt="marques brownlee"
+						/>
+						<div class="video-tempo">15:50</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-13.jpg"
+								alt="aarthificial"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">Motion Canvas is now Open Source!</h3>
+							<p class="video-perfil">aarthificial</p>
+							<p class="video-data"
+								>653 mil de vizualizações &bullet; há 3 meses</p
+							>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://youtu.be/RrUW_-5lZvA" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-14.webp"
+							alt="marques brownlee"
+						/>
+						<div class="video-tempo">9:48</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-14.jpg"
+								alt="luíza campos"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">ALPHAVILLE DO LADO DE DENTRO DO MURO</h3>
+							<p class="video-perfil">luiza campos</p>
+							<p class="video-data"
+								>1,8 mi de vizualizações &bullet; há 11 meses</p
+							>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://youtu.be/F627pKNUCVQ" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-15.webp"
+							alt="JS mastery"
+						/>
+						<div class="video-tempo">4:15</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-15.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"
+								>Build and Deploy 4 Modern React Apps and Get Hired as a Frontend
+								Developer |...</h3
+							>
+							<p class="video-perfil">JavaScripy Mastery</p>
+							<p class="video-data">993 mil vizualizações &bullet; há 6 meses</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://youtu.be/VQraviuwbzU" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-16.webp"
+							alt="kevin powell"
+						/>
+						<div class="video-tempo">9:89</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-16.jpg"
+								alt="Kevin Powell"
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"
+								>5 simple tips to making responsive layouts the easy way</h3
+							>
+							<p class="video-perfil">Kevin Powell</p>
+							<p class="video-data">553 mil visualições &bullet; há 1 ano</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://youtu.be/d8Nh9e7jq7g" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-17.webp"
+							alt="marques brownlee"
+						/>
+						<div class="video-tempo">16:59</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-17.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo"
+								>An exploration of the Vongon Polyphrase</h3
+							>
+							<p class="video-perfil">Fireghosting</p>
+							<p class="video-data">9,5 mil visualizações &bullet; há 7 meses</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="https://youtu.be/Bf7vDBBOBUA" target="_blank" rel="noopener noreferrer">
+				<div class="video-preview">
+					<div class="thumbnail">
+						<img
+							class="video-thumbnail"
+							src="imagens/thumbnails/thumbnail-18.webp"
+							alt="marques brownlee"
+						/>
+						<div class="video-tempo">12:45</div>
+					</div>
+					<div class="video-info">
+						<div class="canal-foto">
+							<img
+								class="foto-autor"
+								src="imagens/fotos-perfil/channel-18.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="video-descricao">
+							<h3 class="video-titulo">Don't Write Comments</h3>
+							<p class="video-perfil">CodeAesthetic</p>
+							<p class="video-data">444 mil visualizações &bullet; há 4 meses</p>
+						</div>
+					</div>
+				</div>
+			</a>
 		</div>
 	</body>
 </html>
